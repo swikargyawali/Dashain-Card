@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashain Taash — Fun JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Dashain Taash — Fun JS</h1>
+          <div class="small">Tyo mood — Dashain ko mahoul! 🎉</div>
+        </div>
+        <div class="dashain-badge">Tika & Dakshina! 🙏</div>
+      </header>
+
+      <div class="controls">
+        <button id="shuffleBtn">Shuffle Deck</button>
+        <button id="dealBtn">Deal 2 cards (each)</button>
+        <button id="roundBtn" class="secondary">New Round</button>
+        <button id="autoBtn" class="secondary">Auto Play 10 rounds</button>
+      </div>
+
+      <div class="board">
+        <div class="player" id="player1">
+          <div><strong>Player 1 (Timi)</strong></div>
+          <div class="hand" id="hand1"></div>
+          <div class="result" id="res1"></div>
+        </div>
+
+        <div class="player" id="player2">
+          <div><strong>Player 2 (Sathi)</strong></div>
+          <div class="hand" id="hand2"></div>
+          <div class="result" id="res2"></div>
+        </div>
+      </div>
+
+      <div
+        style="
+          margin-top: 14px;
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <div id="roundInfo" class="small">Rounds played: 0</div>
+        <div id="scoreBoard" class="small">
+          Score — Timi: 0 | Sathi: 0 | Ties: 0
+        </div>
+      </div>
+
+      <footer>
+        Save this file and open in browser. Cards are rendered with text (no
+        external images) so it'll work offline.
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
