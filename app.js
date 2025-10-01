@@ -117,7 +117,7 @@ document.getElementById("dealBtn").addEventListener("click", () => {
 });
 
 document.getElementById("roundBtn").addEventListener("click", () => {
-  // reset for new round but keep same deck order
+  
   clearBoard();
 });
 
